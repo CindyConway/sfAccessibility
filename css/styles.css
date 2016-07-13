@@ -1,0 +1,330 @@
+.lightskyblue { color: #87CEFA;}/*rgb(135,206,250)*/
+.skyblue { color: #00BFFF;}/*rgb(221,160,221)*/
+.blue {color: #0082ed;}/*rgb(128,0,128)*/
+
+
+/*------------------------------
+  MAIN
+------------------------------*/
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+
+/* Global Styles */
+html,
+body {
+  width: 100%;
+  margin: 0 0;
+  padding-top: 25px;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  font-size: 14px;
+}
+
+.overlay { 
+  z-index: 1;
+  position: absolute;
+  height: 650px;
+  width: 100%;
+  background: rgba(0, 0, 100, .25);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+  letter-spacing: 1.5px;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+  color: #7F8289;
+}
+p {
+  color: #393939;
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+ol{
+  text-align: left;
+  line-height: 1.6em;
+}
+li{
+  font-size: 1.15em;
+  margin-bottom: 7px;
+}
+strong {
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+}
+error {
+  color: #e74c3c;
+}
+a {
+  color: #0082ed;
+  text-decoration: none;
+}
+a:hover {
+  color: #13487D;
+  text-decoration: none;
+}
+.btn-custom {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1em;
+  border: 3px solid #0082ed;
+  border-radius: 0px;
+  webkit-border-radius: 0px;
+  padding: 10px 40px;
+  background: transparent;
+}
+.btn-custom:hover {
+  color: #fff;
+  background: #0082ed;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.btn-custom2 {
+  color: #0082ed;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1em;
+  border: 3px solid #0082ed;
+  border-radius: 0px;
+  webkit-border-radius: 0px;
+  padding: 10px 40px;
+  margin: 20px 0;
+  background: transparent;
+}
+.btn-custom2:hover {
+  color: #fff;
+  background: #0082ed;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.separator {
+ /* margin-top: -30px;*/
+  margin-bottom: 30px;
+  border-top: 3px solid #0082ed!important;
+  width: 50px;
+}
+.navbar {
+  background-color: #0082ed;
+  color: #fff;
+  -moz-box-shadow:    -.5px .5px 6px 0px rgba(0,0,0,.5)
+  -webkit-box-shadow: -.5px .5px 6px 0px rgba(0,0,0,.5);
+  box-shadow:         -.5px .5px 6px 0px rgba(0,0,0,.5); 
+}
+.navbar a{
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-nav > li > a:hover{
+  background-color: #0082ed;
+  text-decoration: none;
+  color: #13487D;
+} 
+.navbar-toggle:hover {
+  background-color: #0082ed!important;
+  color: #fff;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: #0082ed;
+}
+.nav > li > a{
+  top: 12px;
+  display: inline;
+}
+.dropdown-menu {
+  background-color: #0082ed;
+  color: #fff;
+}
+.dropdown-menu > li > a{
+  background-color: #0082ed;
+  color: #fff;
+}
+.dropdown-menu > li > a:hover {
+  background-color: #0082ed;
+  color: #fff;
+}
+.dropdown-header {
+  color: #66FF99;
+}
+
+/* Main */
+#background-image {
+  height: 650px;
+  width: 100%;
+  background: #fefefe center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#separator-image {
+  min-height: 325px;
+  margin-top: 20px;
+  background: #0082ed center center fixed;
+}
+#home{
+  height: 600px;
+  background-color: #0082ed;
+  padding-top: 50px;
+}
+.title {
+  color: #fff;
+  font-size: 8em;
+  font-weight: 300;
+}
+
+/* Intro */
+#intro {
+  margin: 20px 0px 60px 0px;
+}
+.intro-box {
+  margin-top: 30px;
+  text-align: center;
+}
+.intro-body{
+  padding: 0 0;
+  text-align: center;
+}
+.intro-body{
+  padding: 0 0;
+}
+.intro-body p{
+  text-align: justify;
+  padding-top:10px;
+}
+#intro .sub-heading {
+  text-align: center;
+  line-height: 2;
+}
+
+footer {
+  z-index: 10000;
+  position: absolute;
+  background-color: #26292E;
+  float: none;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0px;
+  padding: 20px 0px;
+}
+footer p {
+  color: #fff;
+}
+.credit a{
+  color: #7F8289;
+}
+.credit a:hover{
+  color: #fefefe;
+}
+
+
+/* 20.Media-Query
+-------------------------------------------------------------- */
+
+/* -------------------- Large screens -------------------- */
+@media only screen and (min-width : 1680px) {
+
+}
+
+/* -------------------- Tablet Landscape -------------------- */
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  
+}
+
+/* -------------------- Smaller than 960px -------------------- */
+@media only screen and (max-width: 991px) {
+  #background-image {height: 600px; background: #0082ed top center no-repeat;}
+  .color-overlay{height: 600px;}
+  .overlay{height: 600px;}
+}
+
+
+/* -------------------- Tablet Portrait Size -------------------- */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+
+/* -------------------- All Mobile Sizes -------------------- */
+@media only screen and (max-width: 767px) { 
+  .btn-custom { font-size: .8em; background: #0082ed; }
+  .btn-custom2 { font-size: .8em; }
+  .title { font-size: 4em; }
+  .nav-brand { font-size: 2.2em; }
+  h1 { font-size: 2.2em; }
+  h2 { font-size: 2em; }
+  h3 { font-size: 1.7em; }
+  h4 { font-size: 1.3em; font-weight: 400; }
+  h5 { font-size: .8em; }
+  h6 { font-size: .8em; color: #7F8289; }
+  p { color: #393939; font-size: 1.1em; line-height: 1.5em; }
+  .footer-links a { font-size: 1em; }
+}
+
+/* -------------------- Mobile Landscape -------------------- */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* -------------------- Mobile Portrait -------------------- */
+@media only screen and (max-width: 479px) {
+  
+}
+
+/* Retina Display Media Query */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+
+  /* Retina-specific stuff here */
+}
+

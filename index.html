@@ -1,2 +1,113 @@
-<h1>My Page</h1>
-<p>some accessibility testing</p>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>San Francisco - Accessibility Guidelines</title>
+    <meta name="description" content="Using simple principles to create more inclusive experiences">
+    <meta name="keywords" content="san francisco, city, sf, sfgov, accessibility, disabilities, inclusive, design, development, checklist, guidelines, user, experience, human-centered" />
+    <meta property="og:image" content="http://digitalservices.sfgov.org/assets/SFDS_Logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <a class="navbar-brand" href="/">Accessibility</a>
+      </div> 
+      <div id="navbar-collapse-1" class="collapse navbar-collapse"> 
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Why<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Users</a></li>
+              <li><a href="#">Devices</a></li>
+              <li><a href="#">Law</a></li>
+              <li><a href="#">Standards</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Users</a></li>
+              <li><a href="#">Devices</a></li>
+              <li><a href="#">Law</a></li>
+              <li><a href="#">Standards</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </div>
+    </div>  
+  </nav>
+
+
+    <!-- Header -->
+    <div id="home">
+      <div class="container">
+        <h1 class="title">Access <br/>for All.</h1>
+        <h4>Using simple principles to create more inclusive experiences.</h4>
+        <!-- <br/><br/><br/>
+        <a class="btn-custom" href="/#contact">Read the Full Report (PDF)</a> -->
+      </div>
+    </div>
+    <!-- Header End -->
+    <!-- About -->
+    <div id="intro">
+    <div class="container">
+      <div class="intro-box">
+        <div class="intro-body col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+          <p>Lorem ipsum Esse officia voluptate nulla laborum in in veniam voluptate incididunt ex in do tempor cupidatat consequat adipisicing ad sint cillum ad aliquip Ut labore do est dolor in non aliqua incididunt Duis nisi eiusmod id tempor in ad ut anim in ex in in cillum reprehenderit culpa consectetur fugiat cupidatat consequat in reprehenderit magna commodo nisi ea in reprehenderit elit voluptate.</p>
+        </div>
+        
+      </div>  
+    </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-10 col-lg-offset-1 text-center">
+                 <h6 class="credit">&copy;2016 Made in San Francisco</h6>
+              </div>
+          </div>
+      </div>
+    </footer>
+<!-- JavaScript --> 
+<script>
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
