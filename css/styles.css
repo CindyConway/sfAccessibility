@@ -75,7 +75,6 @@ h6 {
   color: #7F8289;
 }
 p {
-  color: #393939;
   font-size: 1.25em;
   line-height: 1.5em;
 }
@@ -212,14 +211,30 @@ a:hover {
   background: #0082ed center center fixed;
 }
 #home{
-  height: 600px;
+  min-height: 600px;
   background-color: #0082ed;
   padding-top: 50px;
 }
 .title {
   color: #fff;
-  font-size: 8em;
+  font-size: 9em;
   font-weight: 300;
+}
+.roadmap{
+  color: #fff;
+  margin: 50px 10px;
+}
+.roadmap a{
+  color: #fff;
+}
+.roadmap h3{
+  font-weight: 700;
+}
+.roadmap img{
+  width: 50px;
+}
+.roadmap .glyphicon{
+  font-size: .7em;
 }
 
 /* Intro */
@@ -235,6 +250,7 @@ a:hover {
   text-align: center;
 }
 .intro-body{
+  margin-bottom: 40px;
   padding: 0 0;
 }
 .intro-body p{
@@ -308,7 +324,7 @@ footer p {
   h4 { font-size: 1.3em; font-weight: 400; }
   h5 { font-size: .8em; }
   h6 { font-size: .8em; color: #7F8289; }
-  p { color: #393939; font-size: 1.1em; line-height: 1.5em; }
+  p { font-size: 1.1em; line-height: 1.5em; }
   .footer-links a { font-size: 1em; }
 }
 
