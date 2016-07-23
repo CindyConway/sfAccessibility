@@ -180,6 +180,7 @@ a:hover {
   display: inline;
 }
 .dropdown-menu {
+  top:40px;
   background-color: #0082ed;
   color: #fff;
 }
@@ -260,6 +261,20 @@ a:hover {
 #intro .sub-heading {
   text-align: center;
   line-height: 2;
+}
+
+/* Why */
+#why{
+  padding-top: 50px;
+
+}
+.category-title {
+  color: #0082ed;
+  font-size: 6em;
+  font-weight: 300;
+}
+.category-icon img{
+  width: 200px;
 }
 
 footer {
