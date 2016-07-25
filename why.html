@@ -60,37 +60,32 @@
   <div class="col-md-3 pull-right" role="complementary"> 
   <aside class="sidebar hidden-print hidden-xs hidden-sm affix" style=""> 
     <ul class="sidenav"> 
-      <li class=""><a href="#js-overview">Overview</a> 
+      <li class=""><a href="#why">Overview</a> </li> 
+      <li class=""> <a href="#users">Users</a> 
         <ul class="item-nav"> 
-          <li class=""><a href="#js-individual-compiled">Individual or compiled</a></li> 
-          <li class=""><a href="#js-data-attrs">Data attributes</a></li> 
-          <li class=""><a href="#js-programmatic-api">Programmatic API</a></li> 
-          <li class=""><a href="#js-noconflict">No conflict</a></li> 
-          <li class=""><a href="#js-events">Events</a></li> 
-          <li class=""><a href="#js-version-nums">Version numbers</a></li> 
-          <li class=""><a href="#js-disabled">When JavaScript is disabled</a></li> 
-          <li class=""><a href="#callout-third-party-libs">Third-party libraries</a></li> 
+          <li class=""><a href="#users-examples">Examples</a></li>  
+          <li class=""><a href="#users-personas">User Personas</a></li> 
+          <li class=""><a href="#users-testing">User Testing</a></li>
         </ul> 
       </li> 
-      <li class=""><a href="#transitions">Transitions</a></li> 
-      <li class=""> <a href="#modals">Modal</a> 
+      <li class=""> <a href="#devices">Devices</a> 
         <ul class="item-nav"> 
-          <li class=""><a href="#modals-examples">Examples</a></li> 
-          <li class=""><a href="#modals-sizes">Sizes</a></li> 
-          <li class=""><a href="#modals-remove-animation">Remove animation</a></li> 
-          <li class=""><a href="#modals-related-target">Varying content based on trigger button</a></li> 
-          <li class=""><a href="#modals-usage">Usage</a></li> 
-          <li class=""><a href="#modals-options">Options</a></li> 
-          <li class=""><a href="#modals-methods">Methods</a></li> 
-          <li class=""><a href="#modals-events">Events</a></li> 
+          <li class=""><a href="#devices-examples">Examples</a></li> 
+          <li class=""><a href="#devices-usage">Usage</a></li> 
+          <li class=""><a href="#devices-methods">Methods</a></li>  
         </ul> 
-      </li> 
-      <li class=""> <a href="#dropdowns">Dropdown</a> 
+      </li>  
+      <li class=""> <a href="#law">Law</a> 
         <ul class="item-nav"> 
-          <li class=""><a href="#dropdowns-examples">Examples</a></li> 
-          <li class=""><a href="#dropdowns-usage">Usage</a></li> 
-          <li class=""><a href="#dropdowns-methods">Methods</a></li> 
-          <li class=""><a href="#dropdowns-events">Events</a></li> 
+          <li class=""><a href="#law-ada">ADA</a></li> 
+          <li class=""><a href="#law-508">Section 508</a></li>  
+        </ul> 
+      </li>  
+      <li class=""> <a href="#standards">Standards</a> 
+        <ul class="item-nav"> 
+          <li class=""><a href="#standards-wcag">WCAG 2.0</a></li> 
+          <li class=""><a href="#standards-wai">WAI</a></li> 
+          <li class=""><a href="#standards-wai-aria">WAI-ARIA</a></li>  
         </ul> 
       </li>  
     </ul> 
@@ -117,11 +112,11 @@
     </header>
 <!-- Header End -->
 <!-- Users -->
-    <section id="ability" class="section-content" role="main">
-      <div class="container col-md-offset-1 col-md-8">
+    <section class="section-content">
+      <div id="users" class="container col-md-offset-1 col-md-8">
         <h2>Users</h2>
           <p>Lorem ipsum Enim pariatur in nulla quis in irure minim ut ullamco qui minim in commodo ullamco mollit laboris in et ad non eu aliqua commodo non fugiat incididunt deserunt commodo est reprehenderit adipisicing dolore ea ut fugiat magna ea deserunt mollit Excepteur nostrud culpa mollit elit dolor sed id est deserunt sit reprehenderit ea quis cillum non in sint voluptate consectetur tempor aute irure adipisicing minim sed fugiat ex consectetur ullamco minim pariatur  occaecat est minim fugiat cupidatat enim elit velit eu laborum ullamco exercitation ut in in commodo anim quis laborum ea deserunt Excepteur dolor Excepteur dolore est non eu labore aute cillum consequat id cupidatat deserunt incididunt deserunt proident ullamco incididunt est laboris aute ullamco.</p>
-          <div class="row">
+          <div id="users-examples" class="row">
             <div class="col-sm-2 col-md-2 ability-icon">
               <img src="assets/vision.svg">
             </div>
@@ -161,8 +156,8 @@
     </section>
 <!-- Users End -->
 <!-- Personas -->
-    <section id="personas" class="section-content" role="main">
-      <div class="container col-md-offset-1 col-md-8">
+    <section class="section-content">
+      <div id="users-personas" class="container col-md-offset-1 col-md-8">
         <h2>Users Personas</h2>
           <p>Understanding the user is key to providing any relevant solution. User personas allow us to better imagine ourselves in certain scenarios and understand what limitations exist.</p>
           <p>Empathy allows us to keep the user front of mind while building and testing frequently to constantly challenge our assumptions. Once we place ourselves in another's shoes we can start to think and develop solutions to alleviate those barriers. </p>
@@ -188,51 +183,21 @@
     </footer>
 <!-- JavaScript --> 
 <script>
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-    $(document).ready(function(){
-    var current_width = $(window).width();
-    
-    if(current_width > 959){
-      $("#sidebar-wrapper").addClass("active");
-    }
-    });
-    //update the width value when the browser is resized (useful for devices which switch from portrait to landscape)
-    $(window).resize(function(){
-      var current_width = $(window).width();
-     
-      if(current_width < 959){
-        $("#sidebar-wrapper").removeClass("active");
-      }
-      else if(current_width > 959){
-        $("#sidebar-wrapper").addClass("active");
-      }
-    });
-
-    
-
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
             }
-        });
+        }
     });
+});
 
 </script>
 
