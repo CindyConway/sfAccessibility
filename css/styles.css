@@ -287,9 +287,9 @@ a:hover {
 }
 
 /* Why */
-#why{
+#why,
+#how{
   padding-top: 50px;
-
 }
 .category-title {
   color: #0082ed;
