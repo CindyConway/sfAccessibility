@@ -62,12 +62,12 @@ h3 {
 }
 
 h4 {
-  font-size: 1.4em;
+  font-size: 1.7em;
   font-weight: 400;
 }
 
 h5 {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 h6 {
@@ -75,8 +75,8 @@ h6 {
   color: #7F8289;
 }
 p {
-  font-size: 1.25em;
-  line-height: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.4em;
 }
 strong {
   font-weight: 700;
@@ -143,10 +143,6 @@ a:hover {
   margin-bottom: 30px;
   border-top: 3px solid #0082ed!important;
   width: 50px;
-}
-.main {
-  position: absolute;
-  top: 0;
 }
 .navbar {
   background-color: #0082ed;
@@ -291,10 +287,18 @@ a:hover {
 #how{
   padding-top: 50px;
 }
-.category-title {
+.category-title h1{
   color: #0082ed;
   font-size: 6em;
   font-weight: 300;
+}
+/*.category-title h4{
+  font-weight: 700;
+}*/
+.category-overview{
+  margin-top: 30px;
+/*  font-family: "Century", serif;
+  font-size: 1.1em;*/
 }
 .category-icon img{
   width: 200px;
@@ -306,6 +310,17 @@ a:hover {
 }
 .ability-content{
 
+}
+.persona-img img{
+
+}
+.persona-content{
+
+}
+.card{
+  background-color: #f6f6f6;
+  padding-bottom: 10px;
+  border: 1px solid #0082ed;
 }
 
 /* Section */
@@ -373,16 +388,17 @@ footer p {
   .btn-custom { font-size: .8em; background: #0082ed; }
   .btn-custom2 { font-size: .8em; }
   .title { font-size: 4em; }
-  .category-title { font-size: 3em; }
+  .category-title h1{ font-size: 3em; }
   .nav-brand { font-size: 2.2em; }
   h1 { font-size: 2.2em; }
   h2 { font-size: 2em; }
-  h3 { font-size: 1.7em; }
+  h3 { font-size: 1.6em; }
   h4 { font-size: 1.3em; font-weight: 400; }
-  h5 { font-size: .8em; }
+  h5 { font-size: 1em; }
   h6 { font-size: .8em; color: #7F8289; }
-  p { font-size: 1.1em; line-height: 1.5em; }
+  p { font-size: 1.1em; line-height: 1.4em; }
   .footer-links a { font-size: 1em; }
+  .ability-icon img{ width: 70px; }
 }
 
 /* -------------------- Mobile Landscape -------------------- */
