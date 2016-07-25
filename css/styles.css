@@ -286,7 +286,7 @@ a:hover {
   line-height: 2;
 }
 
-/* Why */
+/* Category */
 #why,
 #how{
   padding-top: 50px;
@@ -298,6 +298,15 @@ a:hover {
 }
 .category-icon img{
   width: 200px;
+}
+
+/* Category */
+.section-content div{
+  margin-top: 20px;
+}
+.section-content h2{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #0082ed;
 }
 
 footer {
