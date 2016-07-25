@@ -241,7 +241,105 @@
     </section>
 <!-- Checklist End -->
 
+<!-- Images -->
+<section id="images" class="main-content" role="main">
+ <div class="container col-md-offset-1 col-md-8">
+          <h2>Images</h2>
+          <p>When using images on a page, you must provide an alternate method for that content. This can be provided in multiple ways. You can provide this information with a caption, alt tag, title tag, or aria label. If an image has text, all the text in the image must be provided in the alternate content. No matter which method is used, an alt or title tag must be provided, even if the tag is blank.</p>
 
+<h3>Testing</h3>
+
+<ol>
+<li>Using the web developer tool, select images &gt; Display Alt Attributes &amp; Outline All Images</li>
+<li>Inspect each Alt tag for the following
+
+<ul>
+<li>A unique description of the image is provided</li>
+<li>Repeated images have the same alt text</li>
+<li>All text in the image is included in the alt text</li>
+<li>"Image of" or "Photo of" is not used</li>
+<li>If the alt tag is empty, ensure the image is purely decorative</li>
+<li>If the image is not decorative, make sure the image is described on the page</li>
+</ul></li>
+<li>Check outlined images without alt tags by doing the following
+
+<ul>
+<li>Right click the image</li>
+<li>Select 'Inspect Element'</li>
+<li>Check for a title tag for the information normally found on the alt tag</li>
+</ul></li>
+</ol>
+
+<h3>Examples</h3>
+
+<h3>Correct</h3>
+
+<p><img src="/accessibility/images/sign.jpg" alt="Sign that reads Warning do not read this sign"></p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/accessibility/images/sign.jpg"</span> <span class="na">alt=</span><span class="s">"Sign that reads Warning do not read this sign"</span><span class="nt">&gt;</span>
+</code></pre></div>
+<blockquote>
+<p>Preffered method for providing alternate content.
+Clear alt tag with all text included.</p>
+</blockquote>
+
+<hr>
+
+<p><img src="/accessibility/images/sign.jpg" title="Sign that reads Warning do not read this sign"></p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/accessibility/images/sign.jpg"</span> <span class="na">title=</span><span class="s">"Sign that reads Warning do not read this sign"</span><span class="nt">&gt;</span>
+</code></pre></div>
+<blockquote>
+<p>Acceptable, but less compatible with certain Assitive technologies
+Clear title tag with all text included.</p>
+</blockquote>
+
+<hr>
+
+<p><img src="/accessibility/images/sign.jpg" alt="">
+<span>Sign that reads Warning do not read this sign</span></p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/accessibility/images/sign.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+<span class="nt">&lt;span&gt;</span>Sign that reads Warning do not read this sign<span class="nt">&lt;/span&gt;</span>
+</code></pre></div>
+<blockquote>
+<p>Information contained in the image is provided on the page.
+In most instances, an alt tag would be preferred.
+Images marked with an empty alt (alt="") are considered
+"Decorative" and not read by AT.</p>
+</blockquote>
+
+<hr>
+
+<h4>Incorrect</h4>
+
+<p><img src="/accessibility/images/sign.jpg"></p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/accessibility/images/sign.jpg"</span><span class="nt">&gt;</span>
+</code></pre></div>
+<blockquote>
+<p>Image is missing an alt tag and alternative content</p>
+</blockquote>
+
+<hr>
+
+<p><img src="/accessibility/images/sign.jpg" alt="sign"></p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/accessibility/images/sign.jpg"</span> <span class="na">alt=</span><span class="s">"sign"</span><span class="nt">&gt;</span>
+</code></pre></div>
+<blockquote>
+<p>Alt tag is missing text from image</p>
+</blockquote>
+
+<hr>
+
+<p><img src="/accessibility/images/sign.jpg" alt="Image of sign that says WARNING DO NOT READ THIS SIGN"></p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/accessibility/images/sign.jpg"</span> <span class="na">alt=</span><span class="s">"Image of sign that says WARNING DO NOT READ THIS SIGN"</span><span class="nt">&gt;</span>
+</code></pre></div>
+<blockquote>
+<p>Avoid using "Image of" or "Picture of" as the screen reader
+will notify the user that it is an image. 
+Also avoid using all caps as some screen readers will read
+each letter. ie. W-A-R-N-I-N-G</p>
+</blockquote>
+
+        </section>
+<!-- Images end -->
 
 <!-- FOOTER -->
     <footer class="col-xs-12">
