@@ -55,65 +55,184 @@
     </div>  
   </nav>
 
+  <div class="col-md-3 pull-right" role="complementary"> 
+  <aside class="sidebar hidden-print hidden-xs hidden-sm affix" style=""> 
+    <ul class="sidenav"> 
+      <li class=""><a href="#js-overview">Overview</a> 
+        <ul class="item-nav"> 
+          <li class=""><a href="#js-individual-compiled">Individual or compiled</a></li> 
+          <li class=""><a href="#js-data-attrs">Data attributes</a></li> 
+          <li class=""><a href="#js-programmatic-api">Programmatic API</a></li> 
+          <li class=""><a href="#js-noconflict">No conflict</a></li> 
+          <li class=""><a href="#js-events">Events</a></li> 
+          <li class=""><a href="#js-version-nums">Version numbers</a></li> 
+          <li class=""><a href="#js-disabled">When JavaScript is disabled</a></li> 
+          <li class=""><a href="#callout-third-party-libs">Third-party libraries</a></li> 
+        </ul> 
+      </li> 
+      <li class=""><a href="#transitions">Transitions</a></li> 
+      <li class=""> <a href="#modals">Modal</a> 
+        <ul class="item-nav"> 
+          <li class=""><a href="#modals-examples">Examples</a></li> 
+          <li class=""><a href="#modals-sizes">Sizes</a></li> 
+          <li class=""><a href="#modals-remove-animation">Remove animation</a></li> 
+          <li class=""><a href="#modals-related-target">Varying content based on trigger button</a></li> 
+          <li class=""><a href="#modals-usage">Usage</a></li> 
+          <li class=""><a href="#modals-options">Options</a></li> 
+          <li class=""><a href="#modals-methods">Methods</a></li> 
+          <li class=""><a href="#modals-events">Events</a></li> 
+        </ul> 
+      </li> 
+      <li class=""> <a href="#dropdowns">Dropdown</a> 
+        <ul class="item-nav"> 
+          <li class=""><a href="#dropdowns-examples">Examples</a></li> 
+          <li class=""><a href="#dropdowns-usage">Usage</a></li> 
+          <li class=""><a href="#dropdowns-methods">Methods</a></li> 
+          <li class=""><a href="#dropdowns-events">Events</a></li> 
+        </ul> 
+      </li>  
+    </ul> 
+    <a class="back-to-top" href="#top"> Back to top </a> 
+  </aside> 
+  </div>
 
     <!-- Header -->
-    <div id="why">
-      <div class="container">
-        <div class="row">
+    <header id="why">
+      <div class="container col-md-9">
           <div class="category-icon col-xs-12 col-sm-4 col-md-3 pull-right">
-            <img src="assets/how-icon.svg">
+            <img class="pull-right" src="assets/how-icon.svg">
           </div>  
-          <div class="col-xs-10 col-sm-8 col-md-6">
+          <div class="col-xs-10 col-sm-8 col-md-9">
             <h1 class="category-title">How to implement</h1>
             <h4>Designing and building for accessibility ensures you the ability to reach all your users.</h4>
-          </div> 
-        </div>   
+          </div>  
       </div>
-    </div>
+    </header>
     <!-- Header End -->
-    <!-- About -->
-    <div id="intro">
-    <div class="container">
-      <div class="intro-box">
-        <div class="intro-body col-xs-12">
-          <p>Lorem ipsum Enim pariatur in nulla quis in irure minim ut ullamco qui minim in commodo ullamco mollit laboris in et ad non eu aliqua commodo non fugiat incididunt deserunt commodo est reprehenderit adipisicing dolore ea ut fugiat magna ea deserunt mollit Excepteur nostrud culpa mollit elit dolor sed id est deserunt sit reprehenderit ea quis cillum non in sint voluptate consectetur tempor aute irure adipisicing minim sed fugiat ex consectetur ullamco minim pariatur  occaecat est minim fugiat cupidatat enim elit velit eu laborum ullamco exercitation ut in in commodo anim quis laborum ea deserunt Excepteur dolor Excepteur dolore est non eu labore aute cillum consequat id cupidatat deserunt incididunt deserunt proident ullamco incididunt est laboris aute ullamco.</p>
-          <p>proident sit ut in irure dolore commodo sunt mollit proident Excepteur fugiat pariatur id aliquip aliquip dolore aliquip aliqua ea culpa Ut Ut laborum ut esse enim pariatur consectetur eiusmod deserunt dolor eu esse deserunt fugiat sunt Excepteur et officia sit cillum proident aliqua id proident nostrud officia Ut occaecat pariatur ea officia occaecat adipisicing sed sunt sed proident sunt ullamco exercitation velit non ea est ullamco irure nulla deserunt .</p>
-          <p>sint voluptate ea sunt dolore occaecat qui non amet amet veniam irure occaecat nostrud exercitation culpa ea dolore est in tempor ex in in quis dolore et nostrud eiusmod in dolore Ut aliqua eu voluptate adipisicing ea tempor in consectetur eiusmod commodo eu dolor in Excepteur aute nostrud ut laborum aute dolore labore esse eu Duis mollit consectetur pariatur esse dolor voluptate consequat officia</p>
-        </div>
-      </div>  
+    <!-- Checklist -->
+    <section id="checklist" class="section-content" role="main">
+    <div class="container col-md-offset-1 col-md-8">
+      <h2>Checklist</h2>
+      <p>This checklist helps developers identify potential accessibility issues affecting their websites or applications. It's broken down into three sections of decreasing importance: A, B and C. Please check and address these issues in the order in which they appear.</p>
+
+      <p>For more detail on accessibilty standards, please see <a href="https://www.w3.org/TR/WCAG20/">WCAG2.0 AA</a> </p>
+
+      <ul>
+      <li>A - Critical issues that will cause serious problems and/or stop most users of assitive technology from using the site</li>
+      <li>B - Issues that may cause problems or increased frustration for certain users</li>
+      <li>C - Minor issues that will cause problems or frustration for a small number of users</li>
+      </ul>
+
+      <p>It is important to note, while B and C are noted as less critical, they are still required to be truly 508 compliant. This checklist should be used as a reference for development and is not a substitute for compliance checks by a section 508 coordinator.</p>
+
+      <h3>A - Critical</h3>
+
+      <ol>
+      <li><a href="../keyboard">Site is keyboard accessible</a>
+
+      <ul>
+      <li>All interactions can be accessed with a keyboard</li>
+      </ul></li>
+      <li><a href="../keyboard">Site is free of keyboard traps</a>
+
+      <ul>
+      <li>The keyboard focus is never trapped in a loop</li>
+      </ul></li>
+      <li><a href="../forms">All <code>form</code> inputs have explicit labels</a></li>
+      <li><a href="../images">All relevant images use an <code>img</code> tag</a></li>
+      <li><a href="../images">All images have <code>alt</code> attributes</a></li>
+      <li><a href="../multimedia">Multimedia is tagged</a>
+
+      <ul>
+      <li>All multimedia has appropriate captioning and audio description</li>
+      </ul></li>
+      <li><a href="../color">Text has sufficient color contrast</a>
+
+      <ul>
+      <li>All text has a contrast ratio of 4.5:1 with the background</li>
+      </ul></li>
+      </ol>
+
+      <h3>B - Less Critical</h3>
+
+      <ol>
+      <li><a href="../keyboard">Site never loses focus</a>
+
+      <ul>
+      <li>Focus is always visible when moving through the page with the keyboard</li>
+      </ul></li>
+      <li><a href="../keyboard">Tab order is logical</a></li>
+      <li><a href="../forms">Form instructions are associated with inputs</a></li>
+      <li><a href="../timeouts">Site doesn't timeout unexpectedly</a>
+
+      <ul>
+      <li>Identify elements that may "timeout" and verify that the user can request more time</li>
+      </ul></li>
+      <li><a href="../tables">Tables are coded properly</a>
+
+      <ul>
+      <li>Tables have proper headers and column attributes</li>
+      </ul></li>
+      <li><a href="../headings">Headings are nested properly</a>
+
+      <ul>
+      <li>Heading elements are nested in a logical way</li>
+      </ul></li>
+      </ol>
+
+      <h3>C - Minor</h3>
+
+      <ol>
+      <li><a href="../frames">Frames are named</a>
+
+      <ul>
+      <li>All frames have a name element</li>
+      </ul></li>
+      <li><a href="../flashing">Flashing elements are compliant</a>
+
+      <ul>
+      <li>Elements that flash on screen do so at a rate of less than 3hz</li>
+      </ul></li>
+      <li><a href="../properties">Language is set</a>
+
+      <ul>
+      <li>The language for the page is set</li>
+      <li>The language for sections on the page that differ from the site language are set</li>
+      </ul></li>
+      <li><a href="../css">CSS is not required to use the page</a>
+
+      <ul>
+      <li>The page makes sense with or without CSS</li>
+      </ul></li>
+      <li><a href="../links">Links are unique and contextual</a>
+
+      <ul>
+      <li>All links can be understood taken alone, i.e 'Read more - about 508'</li>
+      </ul></li>
+      <li><a href="../pagetitles">Page titles are descriptive</a></li>
+      <li><a href="../plugins">Required plugins are linked on the page</a></li>
+      </ol>
     </div>
-    </div>
-    <!-- About End -->
+    </section>
+<!-- Checklist End -->
 
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-10 col-lg-offset-1 text-center">
-                 <h6 class="credit">&copy;2016 Made in San Francisco</h6>
-              </div>
-          </div>
-      </div>
+
+<!-- FOOTER -->
+    <footer class="col-xs-12">
+        <h6 class="credit">&copy;2016 Made in San Francisco</h6>
     </footer>
+
 <!-- JavaScript --> 
 <script>
-$(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    });
-});
-
+$('#myAffix').affix({
+  offset: {
+    top: 100,
+    bottom: function () {
+      return (this.bottom = $('.footer').outerHeight(true))
+    }
+  }
+})
 </script>
 
 </body>

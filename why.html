@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
   <nav class="navbar navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -54,65 +55,124 @@
       </div>
     </div>  
   </nav>
-
-
-    <!-- Header -->
-    <div id="why">
-      <div class="container">
-        <div class="row">
-          <div class="category-icon col-xs-12 col-sm-4 col-md-3 pull-right">
-            <img src="assets/why-icon.svg">
+<!-- Side Menu -->
+  <div class="col-md-3 pull-right" role="complementary"> 
+  <aside class="sidebar hidden-print hidden-xs hidden-sm affix" style=""> 
+    <ul class="sidenav"> 
+      <li class=""><a href="#js-overview">Overview</a> 
+        <ul class="item-nav"> 
+          <li class=""><a href="#js-individual-compiled">Individual or compiled</a></li> 
+          <li class=""><a href="#js-data-attrs">Data attributes</a></li> 
+          <li class=""><a href="#js-programmatic-api">Programmatic API</a></li> 
+          <li class=""><a href="#js-noconflict">No conflict</a></li> 
+          <li class=""><a href="#js-events">Events</a></li> 
+          <li class=""><a href="#js-version-nums">Version numbers</a></li> 
+          <li class=""><a href="#js-disabled">When JavaScript is disabled</a></li> 
+          <li class=""><a href="#callout-third-party-libs">Third-party libraries</a></li> 
+        </ul> 
+      </li> 
+      <li class=""><a href="#transitions">Transitions</a></li> 
+      <li class=""> <a href="#modals">Modal</a> 
+        <ul class="item-nav"> 
+          <li class=""><a href="#modals-examples">Examples</a></li> 
+          <li class=""><a href="#modals-sizes">Sizes</a></li> 
+          <li class=""><a href="#modals-remove-animation">Remove animation</a></li> 
+          <li class=""><a href="#modals-related-target">Varying content based on trigger button</a></li> 
+          <li class=""><a href="#modals-usage">Usage</a></li> 
+          <li class=""><a href="#modals-options">Options</a></li> 
+          <li class=""><a href="#modals-methods">Methods</a></li> 
+          <li class=""><a href="#modals-events">Events</a></li> 
+        </ul> 
+      </li> 
+      <li class=""> <a href="#dropdowns">Dropdown</a> 
+        <ul class="item-nav"> 
+          <li class=""><a href="#dropdowns-examples">Examples</a></li> 
+          <li class=""><a href="#dropdowns-usage">Usage</a></li> 
+          <li class=""><a href="#dropdowns-methods">Methods</a></li> 
+          <li class=""><a href="#dropdowns-events">Events</a></li> 
+        </ul> 
+      </li>  
+    </ul> 
+    <a class="back-to-top" href="#top"> Back to top </a> 
+  </aside> 
+  </div>
+<!-- /Side Menu -->
+ 
+<!-- Header -->
+    <header id="why">
+      <div class="container col-md-9">
+          <div class="category-icon col-xs-12 col-sm-4 col-md-3 col-lg-3 pull-right">
+            <img class="pull-right" src="assets/why-icon.svg">
           </div>  
-          <div class="col-xs-10 col-sm-8 col-md-6">
+          <div class="col-xs-10 col-sm-8 col-md-9 col-lg-7">
             <h1 class="category-title">Why it matters</h1>
             <h4>Designing and building for accessibility ensures you the ability to reach all your users.</h4>
           </div> 
-        </div>   
       </div>
-    </div>
-    <!-- Header End -->
-    <!-- About -->
-    <div id="intro">
-    <div class="container">
-      <div class="intro-box">
-        <div class="intro-body col-xs-12">
+    </header>
+<!-- Header End -->
+<!-- Section -->
+    <section id="checklist" class="section-content" role="main">
+      <div class="container col-md-offset-1 col-md-8">
           <p>Lorem ipsum Enim pariatur in nulla quis in irure minim ut ullamco qui minim in commodo ullamco mollit laboris in et ad non eu aliqua commodo non fugiat incididunt deserunt commodo est reprehenderit adipisicing dolore ea ut fugiat magna ea deserunt mollit Excepteur nostrud culpa mollit elit dolor sed id est deserunt sit reprehenderit ea quis cillum non in sint voluptate consectetur tempor aute irure adipisicing minim sed fugiat ex consectetur ullamco minim pariatur  occaecat est minim fugiat cupidatat enim elit velit eu laborum ullamco exercitation ut in in commodo anim quis laborum ea deserunt Excepteur dolor Excepteur dolore est non eu labore aute cillum consequat id cupidatat deserunt incididunt deserunt proident ullamco incididunt est laboris aute ullamco.</p>
           <p>proident sit ut in irure dolore commodo sunt mollit proident Excepteur fugiat pariatur id aliquip aliquip dolore aliquip aliqua ea culpa Ut Ut laborum ut esse enim pariatur consectetur eiusmod deserunt dolor eu esse deserunt fugiat sunt Excepteur et officia sit cillum proident aliqua id proident nostrud officia Ut occaecat pariatur ea officia occaecat adipisicing sed sunt sed proident sunt ullamco exercitation velit non ea est ullamco irure nulla deserunt .</p>
           <p>sint voluptate ea sunt dolore occaecat qui non amet amet veniam irure occaecat nostrud exercitation culpa ea dolore est in tempor ex in in quis dolore et nostrud eiusmod in dolore Ut aliqua eu voluptate adipisicing ea tempor in consectetur eiusmod commodo eu dolor in Excepteur aute nostrud ut laborum aute dolore labore esse eu Duis mollit consectetur pariatur esse dolor voluptate consequat officia</p>
-        </div>
-      </div>  
-    </div>
-    </div>
-    <!-- About End -->
+      </div> 
+    </section>
+<!-- Section End -->
 
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-10 col-lg-offset-1 text-center">
-                 <h6 class="credit">&copy;2016 Made in San Francisco</h6>
-              </div>
-          </div>
-      </div>
+<!-- FOOTER -->
+    <footer class="col-xs-12">
+        <h6 class="credit">&copy;2016 Made in San Francisco</h6>
     </footer>
 <!-- JavaScript --> 
 <script>
-$(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
     });
-});
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    $(document).ready(function(){
+    var current_width = $(window).width();
+    
+    if(current_width > 959){
+      $("#sidebar-wrapper").addClass("active");
+    }
+    });
+    //update the width value when the browser is resized (useful for devices which switch from portrait to landscape)
+    $(window).resize(function(){
+      var current_width = $(window).width();
+     
+      if(current_width < 959){
+        $("#sidebar-wrapper").removeClass("active");
+      }
+      else if(current_width > 959){
+        $("#sidebar-wrapper").addClass("active");
+      }
+    });
+
+    
+
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
 
 </script>
 

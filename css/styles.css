@@ -78,14 +78,6 @@ p {
   font-size: 1.25em;
   line-height: 1.5em;
 }
-ol{
-  text-align: left;
-  line-height: 1.6em;
-}
-li{
-  font-size: 1.15em;
-  margin-bottom: 7px;
-}
 strong {
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
@@ -152,6 +144,10 @@ a:hover {
   border-top: 3px solid #0082ed!important;
   width: 50px;
 }
+.main {
+  position: absolute;
+  top: 0;
+}
 .navbar {
   background-color: #0082ed;
   color: #fff;
@@ -196,7 +192,34 @@ a:hover {
   color: #66FF99;
 }
 
-/* Main */
+/* Side Menu + Brand */
+.sidebar.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    top: 120px; 
+  }
+  .sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  .sidebar.affix-bottom .sidenav,
+  .sidebar.affix .sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .sidebar.affix-bottom .sidenav li,
+  .sidebar.affix .sidenav li{
+    list-style: none;
+  }
+@media (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  .sidebar.affix-bottom,
+  .sidebar.affix {
+    width: 263px;
+  }
+}
+
+
+
+/* HOME */
 #background-image {
   height: 650px;
   width: 100%;
@@ -278,11 +301,8 @@ a:hover {
 }
 
 footer {
-  z-index: 10000;
-  position: absolute;
-  background-color: #26292E;
-  float: none;
   width: 100%;
+  background-color: #26292E;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   color: #fff;
@@ -292,6 +312,9 @@ footer {
 footer p {
   color: #fff;
 }
+/*.footer{
+  display: inline-block !important;
+}*/
 .credit a{
   color: #7F8289;
 }
@@ -314,7 +337,8 @@ footer p {
 }
 
 /* -------------------- Smaller than 960px -------------------- */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 959px) {
+  .main{right: 0;}
   #background-image {height: 600px; background: #0082ed top center no-repeat;}
   .color-overlay{height: 600px;}
   .overlay{height: 600px;}
