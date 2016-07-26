@@ -173,6 +173,7 @@ a:hover {
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #0082ed;
+  border-bottom: 2px solid #fff;
 }
 .nav > li > a{
   /*top: 12px;*/
