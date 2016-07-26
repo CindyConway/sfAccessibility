@@ -88,11 +88,9 @@ error {
 }
 a {
   color: #0082ed;
-  text-decoration: none;
 }
 a:hover {
   color: #13487D;
-  text-decoration: none;
 }
 .btn-custom {
   color: #fff;
