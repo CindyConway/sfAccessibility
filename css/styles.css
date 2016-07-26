@@ -259,23 +259,11 @@ a:hover {
 
 /* Intro */
 #intro {
-  margin: 20px 0px 60px 0px;
-}
-.intro-box {
-  margin-top: 30px;
-  text-align: center;
+  margin: 50px auto;
 }
 .intro-body{
   padding: 0 0;
   text-align: center;
-}
-.intro-body{
-  margin-bottom: 40px;
-  padding: 0 0;
-}
-.intro-body p{
-  text-align: justify;
-  padding-top:10px;
 }
 #intro .sub-heading {
   text-align: center;
