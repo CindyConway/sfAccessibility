@@ -202,6 +202,7 @@ a:hover {
 .sidebar.affix {
     position: fixed; /* Undo the static from mobile first approach */
     top: 120px; 
+    font-size: 1.1em;
   }
   .sidebar.affix-bottom {
     position: absolute; /* Undo the static from mobile first approach */
@@ -210,6 +211,11 @@ a:hover {
   .sidebar.affix .sidenav {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .sidebar.affix-bottom .sidenav ul,
+  .sidebar.affix .sidenav ul{
+    padding-left: 15px;
+    list-style: none;
   }
   .sidebar.affix-bottom .sidenav li,
   .sidebar.affix .sidenav li{
@@ -318,7 +324,7 @@ a:hover {
 
 /* Section */
 section{
-  margin: 15px auto;
+  margin: 50px auto;
 }
 .section-content div{
   margin-top: 20px;
