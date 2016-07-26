@@ -28,28 +28,46 @@
           <span class="sr-only">Toggle navigation</span>
           <span class="glyphicon glyphicon-menu-hamburger"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Accessibility Guide</a>
+        <a href="index.html">Accessibility Guide</a>
       </div> 
       <div id="navbar-collapse-1" class="collapse navbar-collapse"> 
         <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="why.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Why<span class="caret"></span></a>
+          <li class="dropdown hidden-md hidden-lg hidden-xl">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Why<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Users</a></li>
-              <li><a href="#">Devices</a></li>
-              <li><a href="#">Law</a></li>
-              <li><a href="#">Standards</a></li>
+              <li><a href="why.html#why">Overview</a></li>
+              <li><a href="why.html#users">Users</a></li>
+              <li><a href="why.html#devices">Devices</a></li>
+              <li><a href="why.html#law">Law</a></li>
+              <li><a href="why.html#standards">Standards</a></li>
             </ul>
           </li>
-          <li class="dropdown">
-            <a href="how.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How<span class="caret"></span></a>
+          <li class="dropdown hidden-md hidden-lg hidden-xl">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Users</a></li>
-              <li><a href="#">Devices</a></li>
-              <li><a href="#">Law</a></li>
-              <li><a href="#">Standards</a></li>
+              <li><a href="how.html#how">Overview</a></li>
+              <li><a href="how.html#keyboard">Keyboard</a></li>
+              <li><a href="how.html#images">Images</a></li>
+              <li><a href="how.html#contrast">Color Contrast</a></li>
+              <li><a href="how.html#forms">Forms</a></li>
+              <li><a href="how.html#tables">Tables</a></li>
+              <li><a href="how.html#repeat-links">Repetitive Links</a></li>
+              <li><a href="how.html#motion">Animations & Motion</a></li>
+              <li><a href="how.html#titles">Page Titles</a></li>
+              <li><a href="how.html#headings">Headings</a></li>
+              <li><a href="how.html#landmarks">Landmarks</a></li>
+              <li><a href="how.html#multimedia">Multimedia</a></li>
+              <li><a href="how.html#time-outs">Time Outs</a></li>
+              <li><a href="how.html#text">Text Properties</a></li>
+              <li><a href="how.html#CSS">CSS Dependence</a></li>
+              <li><a href="how.html#frames">Frames</a></li>
+              <li><a href="how.html#plug-ins">Plug-ins</a></li>
+              <li><a href="how.html#alt-versions">Alternate Versions</a></li>
+              <li><a href="how.html#writing">Writing Guide</a></li>
             </ul>
           </li>
+          <li class="hidden-xs hidden-sm"><a href="why.html">Why</a></li>
+          <li class="hidden-xs hidden-sm"><a href="how.html">How</a></li>
           <li><a href="#">Resources</a></li>
         </ul>
       </div>
@@ -95,7 +113,7 @@
           <li class=""><a href="#tables-methods">Methods</a></li> 
         </ul> 
       </li>
-      <li class=""> <a href="#repeat-links">Repetative Links</a> 
+      <li class=""> <a href="#repeat-links">Repetitive Links</a> 
         <ul class="item-nav"> 
           <li class=""><a href="#repeat-links-examples">Examples</a></li> 
           <li class=""><a href="#repeat-links-usage">Usage</a></li> 
@@ -143,110 +161,213 @@
 <!-- Checklist -->
 <section id="checklist" class="container section-content"> 
   <div class="col-md-9"> 
-      <h2>Checklist</h2>
-      <p>This checklist helps developers identify potential accessibility issues affecting their websites or applications. It's broken down into three sections of decreasing importance: A, B and C. Please check and address these issues in the order in which they appear.</p>
+  <h2>Checklist</h2>
+  <p>This checklist helps developers identify potential accessibility issues affecting their websites or applications. It's broken down into three sections of decreasing importance: A, B and C. Please check and address these issues in the order in which they appear.</p>
 
-      <p>For more detail on accessibilty standards, please see <a href="https://www.w3.org/TR/WCAG20/">WCAG2.0 AA</a> </p>
+  <p>For more detail on accessibilty standards, please see <a href="https://www.w3.org/TR/WCAG20/">WCAG2.0 AA</a> </p>
 
-      <ul>
-      <li>A - Critical issues that will cause serious problems and/or stop most users of assitive technology from using the site</li>
-      <li>B - Issues that may cause problems or increased frustration for certain users</li>
-      <li>C - Minor issues that will cause problems or frustration for a small number of users</li>
-      </ul>
+  <ul>
+  <li>A - Critical issues that will cause serious problems and/or stop most users of assitive technology from using the site</li>
+  <li>B - Issues that may cause problems or increased frustration for certain users</li>
+  <li>C - Minor issues that will cause problems or frustration for a small number of users</li>
+  </ul>
 
-      <p>It is important to note, while B and C are noted as less critical, they are still required to be truly 508 compliant. This checklist should be used as a reference for development and is not a substitute for compliance checks by a section 508 coordinator.</p>
+  <p>It is important to note, while B and C are noted as less critical, they are still required to be truly 508 compliant. This checklist should be used as a reference for development and is not a substitute for compliance checks by a section 508 coordinator.</p>
 
-      <h3>A - Critical</h3>
+  <h3>A - Critical</h3>
 
-      <ol>
-      <li><a href="../keyboard">Site is keyboard accessible</a>
+  <ol>
+  <li><a href="../keyboard">Site is keyboard accessible</a>
 
-      <ul>
-      <li>All interactions can be accessed with a keyboard</li>
-      </ul></li>
-      <li><a href="../keyboard">Site is free of keyboard traps</a>
+  <ul>
+  <li>All interactions can be accessed with a keyboard</li>
+  </ul></li>
+  <li><a href="../keyboard">Site is free of keyboard traps</a>
 
-      <ul>
-      <li>The keyboard focus is never trapped in a loop</li>
-      </ul></li>
-      <li><a href="../forms">All <code>form</code> inputs have explicit labels</a></li>
-      <li><a href="../images">All relevant images use an <code>img</code> tag</a></li>
-      <li><a href="../images">All images have <code>alt</code> attributes</a></li>
-      <li><a href="../multimedia">Multimedia is tagged</a>
+  <ul>
+  <li>The keyboard focus is never trapped in a loop</li>
+  </ul></li>
+  <li><a href="../forms">All <code>form</code> inputs have explicit labels</a></li>
+  <li><a href="../images">All relevant images use an <code>img</code> tag</a></li>
+  <li><a href="../images">All images have <code>alt</code> attributes</a></li>
+  <li><a href="../multimedia">Multimedia is tagged</a>
 
-      <ul>
-      <li>All multimedia has appropriate captioning and audio description</li>
-      </ul></li>
-      <li><a href="../color">Text has sufficient color contrast</a>
+  <ul>
+  <li>All multimedia has appropriate captioning and audio description</li>
+  </ul></li>
+  <li><a href="../color">Text has sufficient color contrast</a>
 
-      <ul>
-      <li>All text has a contrast ratio of 4.5:1 with the background</li>
-      </ul></li>
-      </ol>
+  <ul>
+  <li>All text has a contrast ratio of 4.5:1 with the background</li>
+  </ul></li>
+  </ol>
 
-      <h3>B - Less Critical</h3>
+  <h3>B - Less Critical</h3>
 
-      <ol>
-      <li><a href="../keyboard">Site never loses focus</a>
+  <ol>
+  <li><a href="../keyboard">Site never loses focus</a>
 
-      <ul>
-      <li>Focus is always visible when moving through the page with the keyboard</li>
-      </ul></li>
-      <li><a href="../keyboard">Tab order is logical</a></li>
-      <li><a href="../forms">Form instructions are associated with inputs</a></li>
-      <li><a href="../timeouts">Site doesn't timeout unexpectedly</a>
+  <ul>
+  <li>Focus is always visible when moving through the page with the keyboard</li>
+  </ul></li>
+  <li><a href="../keyboard">Tab order is logical</a></li>
+  <li><a href="../forms">Form instructions are associated with inputs</a></li>
+  <li><a href="../timeouts">Site doesn't timeout unexpectedly</a>
 
-      <ul>
-      <li>Identify elements that may "timeout" and verify that the user can request more time</li>
-      </ul></li>
-      <li><a href="../tables">Tables are coded properly</a>
+  <ul>
+  <li>Identify elements that may "timeout" and verify that the user can request more time</li>
+  </ul></li>
+  <li><a href="../tables">Tables are coded properly</a>
 
-      <ul>
-      <li>Tables have proper headers and column attributes</li>
-      </ul></li>
-      <li><a href="../headings">Headings are nested properly</a>
+  <ul>
+  <li>Tables have proper headers and column attributes</li>
+  </ul></li>
+  <li><a href="../headings">Headings are nested properly</a>
 
-      <ul>
-      <li>Heading elements are nested in a logical way</li>
-      </ul></li>
-      </ol>
+  <ul>
+  <li>Heading elements are nested in a logical way</li>
+  </ul></li>
+  </ol>
 
-      <h3>C - Minor</h3>
+  <h3>C - Minor</h3>
 
-      <ol>
-      <li><a href="../frames">Frames are named</a>
+  <ol>
+  <li><a href="../frames">Frames are named</a>
 
-      <ul>
-      <li>All frames have a name element</li>
-      </ul></li>
-      <li><a href="../flashing">Flashing elements are compliant</a>
+  <ul>
+  <li>All frames have a name element</li>
+  </ul></li>
+  <li><a href="../flashing">Flashing elements are compliant</a>
 
-      <ul>
-      <li>Elements that flash on screen do so at a rate of less than 3hz</li>
-      </ul></li>
-      <li><a href="../properties">Language is set</a>
+  <ul>
+  <li>Elements that flash on screen do so at a rate of less than 3hz</li>
+  </ul></li>
+  <li><a href="../properties">Language is set</a>
 
-      <ul>
-      <li>The language for the page is set</li>
-      <li>The language for sections on the page that differ from the site language are set</li>
-      </ul></li>
-      <li><a href="../css">CSS is not required to use the page</a>
+  <ul>
+  <li>The language for the page is set</li>
+  <li>The language for sections on the page that differ from the site language are set</li>
+  </ul></li>
+  <li><a href="../css">CSS is not required to use the page</a>
 
-      <ul>
-      <li>The page makes sense with or without CSS</li>
-      </ul></li>
-      <li><a href="../links">Links are unique and contextual</a>
+  <ul>
+  <li>The page makes sense with or without CSS</li>
+  </ul></li>
+  <li><a href="../links">Links are unique and contextual</a>
 
-      <ul>
-      <li>All links can be understood taken alone, i.e 'Read more - about 508'</li>
-      </ul></li>
-      <li><a href="../pagetitles">Page titles are descriptive</a></li>
-      <li><a href="../plugins">Required plugins are linked on the page</a></li>
-      </ol>
-    
+  <ul>
+  <li>All links can be understood taken alone, i.e 'Read more - about 508'</li>
+  </ul></li>
+  <li><a href="../pagetitles">Page titles are descriptive</a></li>
+  <li><a href="../plugins">Required plugins are linked on the page</a></li>
+  </ol>
+
   </div>
 </section>
 <!-- Checklist End -->
+
+<!-- Keyboard -->
+<section id="keyboard" class="container section-content"> 
+  <div class="col-md-9"> 
+  <h2>Keyboard Access</h2>
+  <p>Keyboard access to a website is key to the usability of your site. All interactions and information that can be accessed with a mouse <strong>must</strong> be accessible with just a keyboard. This doesn't mean everyone who can't use a mouse will use a keyboard, but alternative AT inputs use keyboard-like inputs to navigate the web. </p>
+
+  <h3>Testing</h3>
+
+  <ol>
+  <li>Identify all interactions on the page.</li>
+  <li>Using the tab, enter, and space bar, navigate the page and ensure each input/interaction can be triggered.
+
+  <ul>
+  <li>Ensure rollover / hover interactions (help text, etc.) can be triggered as well.</li>
+  <li><strong>If the user cannot interact with something, or get the information another way, this is a failure</strong>.</li>
+  </ul></li>
+  <li>Make sure the tab order of the page is logical and follows the visual order of elements on the page.
+
+  <ul>
+  <li><strong>If the tab order is confusing, this is a failure</strong>.</li>
+  </ul></li>
+  <li>Check that the focus is always visible when moving through the page with the tab key.
+
+  <ul>
+  <li><strong>If you lose focus, on a hidden link or other object when simply tabbing through the page, this is a failure</strong>.</li>
+  </ul></li>
+  <li>Make sure you can tab through the page and get back the address bar.
+
+  <ul>
+  <li><strong>If you ever need your mouse to get back to an element, this is a failure</strong>.</li>
+  </ul></li>
+  <li>Keyboard users must be able to easily use and dismiss modal dialog boxes, lightboxes, or other pop-ups.
+
+  <ul>
+  <li>Modal dialog boxes need to trap the keyboard. When a modal dialog box is triggered, the keyboard focus needs to immediately move to the first actionable element in the modal.</li>
+  <li>The keyboard cannot use the modal dialog box until it is dismissed. When a user moves the keyboard focus past the last element in the modal dialog box, it needs to loop to the beginning of the dialog box.</li>
+  <li>The keyboard user needs to be able to access all controls in the dialog box, especially the controls to dismiss the dialog.</li>
+  <li><strong>If the keyboard user cannot do all of these things, this is a failure</strong>.</li>
+  <li>Ideally, the keyboard user should also be able to dismiss the modal dialog box with the Escape key.</li>
+  </ul></li>
+  <li>If an interaction reveals hidden content.
+
+  <ul>
+  <li>Ensure the focus is moved to the revealed content.</li>
+  <li>If this does not happen, check for a programatic description of the change.</li>
+  </ul></li>
+  <li>Check for title tags providing information not on the screen.
+
+  <ul>
+  <li><strong>Title attributes which can only be exposed by hovering the mouse over the element are a failure of keyboard access</strong>.</li>
+  </ul></li>
+  <li>Check that the focus never goes to elements that won't be available to somebody using a mouse.
+
+  <ul>
+  <li><strong>If the keyboard focus goes to an offscreen element that has been temporarily hidden (items in a non-expanded drop-down menu, offscreen modals which haven't been triggered, etc.), this is a failure</strong>.</li>
+  </ul></li>
+  </ol>
+
+  <h3>Examples</h3>
+
+  <p><a href="#">Link to nowhere 1</a></p>
+
+  <p><a href="#">Link to nowhere 2</a></p>
+
+  <p><a href='javascript:$("#hiddenContent").show().focus();'>Reveal Hidden Content</a></p>
+
+  <div id="hiddenContent" style="display:none;" tabindex="-1">This div was hidden, now it's not!</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link to nowhere 1<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link to nowhere 2<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'javascript:$("#hiddenContent").show().focus();'</span><span class="nt">&gt;</span>
+      Reveal Hidden Content
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"hiddenContent"</span> 
+       <span class="na">style=</span><span class="s">"display:none;"</span> 
+       <span class="na">tabindex=</span><span class="s">'-1'</span><span class="nt">&gt;</span>
+      This div was hidden, now it's not!
+  <span class="nt">&lt;/div&gt;</span>
+  </code></pre></div>
+  <blockquote>
+  <p>Avoid using tabindex of &gt;= 1 as this will disrupt the normal tab order of the page. tabindex of -1 is only appropriate when autofocusing an element not normally interactive.</p>
+  </blockquote>
+
+  <h4>Keyboard Trap</h4>
+
+  <p><a class="sr-only moveFocus" href="#">hidden</a></p>
+
+  <p><a class="keyboardTrap" href="#">Select to disable keyboard trap</a></p>
+
+  <p><a class="keyboardTrap" href="#">Select to disable keyboard trap</a></p>
+
+  <p><a class="keyboardTrap" href="#">Select to disable keyboard trap</a></p>
+
+  <p><a class="keyboardTrap" href="#">Select to disable keyboard trap</a></p>
+
+  <p><a class="sr-only moveFocus" href="#">hidden</a></p>
+
+  <blockquote>
+  <p>This is an example of a keyboard trap. Focus moves in a loop making the rest of the page inaccessible. A quick test is to tab through the page quickly and ensure you can get focus back to the address bar.</p>
+  </blockquote>
+  </div>
+</section>
+<!-- End Keyboard -->
 
 <!-- Images -->
 <section id="images" class="container section-content">
