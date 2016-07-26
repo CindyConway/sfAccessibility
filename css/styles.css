@@ -87,7 +87,7 @@ error {
   color: #e74c3c;
 }
 a {
-  color: #0082ed;
+  color: #0052C2;
 }
 a:hover {
   color: #13487D;
@@ -169,14 +169,6 @@ a:hover {
   background-color: #0082ed;
   color: #13487D;
 }
-/*a.dropdown-toggle:hover {
-  border:none;
-  color: #13487D;
-}*/
-/*.nav > li > a{
-  padding: 0 0;
-  margin: 0 10px;
-}*/
 .dropdown-menu {
   top:40px;
   background-color: #0082ed;
@@ -190,7 +182,6 @@ a:hover {
   background-color: #0082ed;
   color: #13487D;
   border: none;
-
 }
 .dropdown-header {
   color: #66FF99;
@@ -258,6 +249,9 @@ a:hover {
 }
 .roadmap a{
   color: #fff;
+}
+.roadmap a:hover{
+  text-decoration: none;
 }
 .roadmap h3{
   font-weight: 700;
