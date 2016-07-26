@@ -79,6 +79,9 @@ p {
   font-size: 1.2em;
   line-height: 1.4;
 }
+ol li{ 
+  font-size: 16px;
+}
 strong {
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
@@ -270,6 +273,15 @@ a:hover {
 .intro-body{
   text-align: center;
 }
+#stats{
+  height: 250px;
+  background-color: #e6e6e6;
+}
+.stats{
+  margin-top: 100px;
+  text-align: center;
+  font-weight: 700;
+}
 
 /* Category */
 #why,
@@ -294,8 +306,8 @@ a:hover {
 }
 
 /* Personas */
-.ability-icon img{
-  width: 100px;
+.ability-icon{
+  margin-top: 25px;
 }
 .ability-content{
 
