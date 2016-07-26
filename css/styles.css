@@ -324,6 +324,9 @@ a:hover {
 }
 
 /* Section */
+section{
+  margin: 15px auto;
+}
 .section-content div{
   margin-top: 20px;
 }

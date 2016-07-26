@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>San Francisco - Accessibility Guidelines - Why</title>
+    <title>San Francisco - Accessibility Guide - How</title>
     <meta name="description" content="Why web accessibility matters">
-    <meta name="keywords" content="san francisco, city, sf, sfgov, web, accessibility, disabilities, inclusive, design, development, checklist, guidelines, user, experience, human-centered" />
+    <meta name="keywords" content="san francisco, city, sf, sfgov, web, accessibility, disabilities, inclusive, design, development, guide, educational, training, checklist, guidelines, user, experience, human-centered" />
     <meta property="og:image" content="http://digitalservices.sfgov.org/assets/SFDS_Logo.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -28,7 +28,7 @@
           <span class="sr-only">Toggle navigation</span>
           <span class="glyphicon glyphicon-menu-hamburger"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Accessibility</a>
+        <a class="navbar-brand" href="index.html">Accessibility Guide</a>
       </div> 
       <div id="navbar-collapse-1" class="collapse navbar-collapse"> 
         <ul class="nav navbar-nav navbar-right">
@@ -123,21 +123,26 @@
   </div>
 <!-- /Side Menu -->
 <!-- Header -->
-    <header id="how">
-      <div class="container col-md-9">
+    <header id="how" class="container">
+      <div class="col-md-9">
           <div class="category-icon col-xs-12 col-sm-4 col-md-3 col-lg-3 pull-right">
             <img class="pull-right" src="assets/how-icon.svg">
           </div>  
           <div class="category-title col-xs-10 col-sm-8 col-md-9 col-lg-7">
             <h1>How to implement</h1>
             <h4>Designing and building for accessibility ensures you the ability to reach all your users.</h4>
-          </div>  
+          </div>
+          <div class="category-overview col-xs-12">
+            <p>As a city we are required by law to meet the accessibility guidelines set forth by the Americans with Disabilities Act and Section 508 of the Rehabilitation Act.  But for too long our approch has been one of compliance, designed around certain best practices; but, best practices perpetuate a conflicting “one size fits all” model that’s rarely rooted in any actual insight (much less insight that is relevant to your product) propelling products toward a state of mediocrity.</p>
+            <p>We have choosen to completely revamp our guidelines and impliment an educational approach throughout our product teams. From project managers to content strategist and designers to developers, we all learn why this matters and how to implement, holding each other accountable in the process.  We have actually brought an idealogy of empathy into our entire design and development process. Focused on research, testing, and feedback of ALL our users.</p>
+            <p>First we need to educate ourselves in how people with disabilities interact through their numerous different devices. What are the limitations and advantages of each device?</p>
+          </div>    
       </div>
     </header>
 <!-- Header End -->
 <!-- Checklist -->
- <div class="container col-md-offset-1 col-md-8">
-    <section id="checklist" class="section-content">
+<section id="checklist" class="container section-content"> 
+  <div class="col-md-9"> 
       <h2>Checklist</h2>
       <p>This checklist helps developers identify potential accessibility issues affecting their websites or applications. It's broken down into three sections of decreasing importance: A, B and C. Please check and address these issues in the order in which they appear.</p>
 
@@ -238,15 +243,17 @@
       <li><a href="../pagetitles">Page titles are descriptive</a></li>
       <li><a href="../plugins">Required plugins are linked on the page</a></li>
       </ol>
-    </section>
-</div>
+    
+  </div>
+</section>
 <!-- Checklist End -->
 
 <!-- Images -->
-<div class="container col-md-offset-1 col-md-8">
-  <section id="images" class="section-content">
-            <h2>Images</h2>
-            <p>When using images on a page, you must provide an alternate method for that content. This can be provided in multiple ways. You can provide this information with a caption, alt tag, title tag, or aria label. If an image has text, all the text in the image must be provided in the alternate content. No matter which method is used, an alt or title tag must be provided, even if the tag is blank.</p>
+<section id="images" class="container section-content">
+  <div class="col-md-9">
+
+  <h2>Images</h2>
+  <p>When using images on a page, you must provide an alternate method for that content. This can be provided in multiple ways. You can provide this information with a caption, alt tag, title tag, or aria label. If an image has text, all the text in the image must be provided in the alternate content. No matter which method is used, an alt or title tag must be provided, even if the tag is blank.</p>
 
   <h3>Testing</h3>
 
@@ -338,15 +345,17 @@
   Also avoid using all caps as some screen readers will read
   each letter. ie. W-A-R-N-I-N-G</p>
   </blockquote>
-  </section>
-</div>
+  
+  </div>
+</section>
 <!-- Images end -->
 
 <!-- Color Contrast -->
-<div class="container col-md-offset-1 col-md-8">
-  <section id="contrast" class="section-content">
-            <h2>Color and Contrast</h2>
-            <p>There are two aspects we need to address when it comes to color, contrast and color dependence. Color contrast is the ratio of the foreground color(text) and the background color. Color dependence is the need to see color to understand the information. Unless specific agency requirements dictate otherwise, color contrast should meet the <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast">WCAG 2.0 AA</a> minimum color contrast ratio of <strong>4.5:1</strong>.</p>
+<section id="contrast" class="container section-content">
+  <div class="col-md-9">
+  
+  <h2>Color and Contrast</h2>
+  <p>There are two aspects we need to address when it comes to color, contrast and color dependence. Color contrast is the ratio of the foreground color(text) and the background color. Color dependence is the need to see color to understand the information. Unless specific agency requirements dictate otherwise, color contrast should meet the <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast">WCAG 2.0 AA</a> minimum color contrast ratio of <strong>4.5:1</strong>.</p>
 
   <h3>Testing</h3>
 
@@ -417,16 +426,16 @@
   <p>This example passes because the * and the red text indicates the required field.</p>
   </blockquote>
 
-  </section>
-</div>
+  </div>
+</section>
 <!-- Color Contrast end -->
 
 <!-- Forms -->
-<div class="container col-md-offset-1 col-md-8">
-  <section id="forms" class="section-content">
+<section id="forms" class="container section-content">
+  <div class="col-md-9">
 
-            <h2>Forms</h2>
-            <p>Making forms accessible is a simple process. Each form element should be associated with its instructions and errors, and everything should be accessible via the keyboard. </p>
+  <h2>Forms</h2>
+  <p>Making forms accessible is a simple process. Each form element should be associated with its instructions and errors, and everything should be accessible via the keyboard. </p>
 
   <h3>Testing</h3>
 
@@ -607,61 +616,196 @@
   </code></pre></div>
   <p><strong>Screen Reader reads input as:</strong> <code>Car Edit text</code>
   </p><hr><p></p>
-  </section>
-</div>
+  
+  </div>
+</section>
 <!-- Forms end -->
 
 <!-- Tables -->
-<div class="container col-md-offset-1 col-md-8">
-  <section id="tables" class="section-content">
-            <h2>Flashing</h2>
-            <p>Flashing is generally a bad idea. It can cause all sorts of issues, from seizures to motion sickness. If you absolutely must have a flashing element there are a few things to consider. </p>
+<section id="tables" class="container section-content">
+  <div class="col-md-9">
+
+  <h2>Tables</h2>
+  <p>When tables are used to show data, the header cells that relate to the data cells need to be programatically linked. This makes table navigation for screen readers less painful. </p>
+
+  <p>Simple tables can have 2 levels of headers. Each header cell should have <code>scope='col'</code> or <code>scope='row'</code>. </p>
+
+  <p>Complex tables are tables with more than 2 levels of headers. Each header should be given a unique <code>id</code> and each data cell should have a <code>headers</code> attribute with each related header cells id listed.</p>
+
+  <p>If a table has text associated with it, ensure the text is programatically linked to the table. This is ususally with a <code>&lt;caption&gt;</code> element. This element should be the first element under the <code>&lt;table&gt;</code> element. While a <code>caption</code> is not required, it can be very helpful to screen reader users navigating the page. A <code>caption</code> element is <strong>strongly</strong> encouraged on data tables as it gives context to the data. </p>
 
   <h3>Testing</h3>
 
-  <ul>
-  <li>Failure at any step constitutes a 508 compliance issue</li>
-  </ul>
-
   <ol>
-  <li>Check if you can determine the frequency of "flashing"
+  <li>Identify 'data' tables (layout tables are exempt)</li>
+  <li>View the table source code</li>
+  <li>Identify the table headers
 
   <ul>
-  <li>Note: Scrolling text is considered flashing for our purposes</li>
+  <li>Check for scope on simple tables</li>
+  <li>Check for id and headers on complex tables </li>
   </ul></li>
-  <li>Check that the rate of flashing is less than 3hz (3 times a second), or scroll delay is set to &gt;= 400</li>
   </ol>
 
   <h3>Examples</h3>
 
   <h4>Passes</h4>
 
-  <p><marquee scrolldelay="400">Here is a marquee, I bet you haven't seen this in a while, anyway, the scroll delay is set to 400.</marquee></p>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;marquee</span> <span class="na">scrolldelay=</span><span class="s">"400"</span><span class="nt">&gt;</span>
-      Here is a marquee, I bet you haven't seen this in a while, anyway, the scroll delay is set to 400.
-  <span class="nt">&lt;/marquee&gt;</span>
+  <h5>Simple Table</h5>
+
+  <table>
+    <caption>User's Height and Weight</caption>
+    <tbody><tr>
+      <th scope="col">
+        Name
+      </th>
+      <th scope="col">
+        Height
+      </th>
+      <th scope="col">
+        Age
+      </th>
+    </tr>
+    <tr>
+      <th scope="row">
+        Walter
+      </th>
+      <td>6'4</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <th scope="row">
+        Steve
+      </th>
+      <td>5'4</td>
+      <td>30</td>
+    </tr>
+  </tbody></table>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;caption&gt;</span>User's Height and Weight<span class="nt">&lt;/caption&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+        Name
+      <span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+        Height
+      <span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+        Age
+      <span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">'row'</span><span class="nt">&gt;</span>
+        Walter
+      <span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;</span>6'4<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>34<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">'row'</span><span class="nt">&gt;</span>
+        Steve
+      <span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td&gt;</span>5'4<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>30<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
   </code></pre></div>
   <blockquote>
-  <p>This is an example of marquee. The scrolldelay is set and it is equal to 400 meaning it is compliant. </p>
+  <p>Looking at this table, the column headers all relate to the cells below. This is done programatically with <code>scope="col"</code>. Each height and age value is related to the person and this is done programatically with <code>scope="row"</code>.</p>
   </blockquote>
 
-  <h4>Fails</h4>
+  <h5>Complex table</h5>
 
-  <p><button type="button" id="blinkbutton">Click to see non-compliant flashing</button>
-  <span class="blink" style="display:none;">This text is blinking</span></p>
-
+  <table>
+    <caption>User's Height and Weight</caption>
+    <tbody><tr>
+      <th rowspan="2" id="name">
+        Name
+      </th>
+      <th colspan="2" id="height">
+        Height
+      </th>
+      <th rowspan="2" id="age">
+        Age
+      </th>
+    </tr>
+    <tr>
+      <th id="feet" headers="height">
+        Feet
+      </th>
+      <th id="inches" headers="height">
+        Inches
+      </th>
+    </tr>
+    <tr>
+      <th headers="name">
+        Walter
+      </th>
+      <td headers="height feet">6</td>
+      <td headers="height inches">4</td>
+      <td headers="age">34</td>
+    </tr>
+    <tr>
+      <th headers="name">
+        Steve
+      </th>
+      <td headers="height feet">5</td>
+      <td headers="height inches">4</td>
+      <td headers="age">30</td>
+    </tr>
+  </tbody></table>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;caption&gt;</span>User's Height and Weight<span class="nt">&lt;/caption&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">rowspan=</span><span class="s">'2'</span> <span class="na">id=</span><span class="s">'name'</span><span class="nt">&gt;</span>
+        Name
+      <span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">colspan=</span><span class="s">'2'</span> <span class="na">id=</span><span class="s">'height'</span><span class="nt">&gt;</span>
+        Height
+      <span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">rowspan=</span><span class="s">'2'</span> <span class="na">id=</span><span class="s">'age'</span><span class="nt">&gt;</span>
+        Age
+      <span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">id=</span><span class="s">'feet'</span> <span class="na">headers=</span><span class="s">'height'</span><span class="nt">&gt;</span>
+        Feet
+      <span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">id=</span><span class="s">'inches'</span> <span class="na">headers=</span><span class="s">'height'</span><span class="nt">&gt;</span>
+        Inches
+      <span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">headers=</span><span class="s">'name'</span> <span class="na">id=</span><span class="s">'walter'</span><span class="nt">&gt;</span>
+        Walter
+      <span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">headers=</span><span class="s">'height feet walter'</span><span class="nt">&gt;</span>6<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">headers=</span><span class="s">'height inches walter'</span><span class="nt">&gt;</span>4<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">headers=</span><span class="s">'age walter'</span><span class="nt">&gt;</span>34<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">headers=</span><span class="s">'name'</span> <span class="na">id=</span><span class="s">'steve'</span><span class="nt">&gt;</span>
+        Steve
+      <span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">headers=</span><span class="s">'height feet steve'</span><span class="nt">&gt;</span>5<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">headers=</span><span class="s">'height inches steve'</span><span class="nt">&gt;</span>4<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">headers=</span><span class="s">'age steve'</span><span class="nt">&gt;</span>30<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+  </code></pre></div>
   <blockquote>
-  <p><strong><em>Failure:</em></strong> This blinking text fails because the rate of flashing can't be determined and its greater than 3hz.</p>
+  <p>This is an example of a complex table, all the cells are associated to their respective headers with the <code>headers</code> attribute. Most tables don't require this level of complexity. </p>
   </blockquote>
-  </section>
-</div>
+
+  </div>
+</section>
 <!-- Tables end -->
 
 <!-- Repetitive Links -->
-<div class="container col-md-offset-1 col-md-8">
-  <section id="repeat-links" class="section-content">
-            <h2>Links and Repetitive Content</h2>
-            <p>Links are commonly used to quickly navigate a site when someone is using AT. Often, screen reader users won't read through an entire page to find what they are looking for, they simply move from link to link. </p>
+<section id="repeat-links" class="container section-content">
+  <div class="col-md-9">
+  
+  <h2>Links and Repetitive Content</h2>
+  <p>Links are commonly used to quickly navigate a site when someone is using AT. Often, screen reader users won't read through an entire page to find what they are looking for, they simply move from link to link. </p>
 
   <p>Things become problematic when links only make sense with context. Links such as 'Click Here' or 'Read more' don't make sense without that visual context. It's important that we inspect our sites for these types of links. These links can be made accessible using <code>title</code> or <code>ARIA</code> attributes, but this is not ideal. The ideal method for making these links accessible, is just writing better link text.</p>
 
@@ -772,15 +916,17 @@
   <blockquote>
   <p>This is how the 'Skip Navigation' was achieved for the accessiblity site, feel free to use for your own site. </p>
   </blockquote>
+  
   </div>
-          </section>
+</section>
   <!-- Repetitive Links end -->
 
   <!-- Animations & Motions -->
-<div class="container col-md-offset-1 col-md-8">
-  <section id="animate" class="section-content">
-            <h2>Flashing</h2>
-            <p>Flashing is generally a bad idea. It can cause all sorts of issues, from seizures to motion sickness. If you absolutely must have a flashing element there are a few things to consider. </p>
+<section id="animate" class="container section-content">
+<div class="col-md-9">
+  
+  <h2>Flashing</h2>
+  <p>Flashing is generally a bad idea. It can cause all sorts of issues, from seizures to motion sickness. If you absolutely must have a flashing element there are a few things to consider. </p>
 
   <h3>Testing</h3>
 
@@ -818,16 +964,17 @@
   <blockquote>
   <p><strong><em>Failure:</em></strong> This blinking text fails because the rate of flashing can't be determined and its greater than 3hz.</p>
   </blockquote>
-  </section>
-</div>
+  
+  </div>
+</section>
 <!-- Animations & Motions end -->
 
 <!-- Page Titles -->
-<div class="container col-md-offset-1 col-md-8">
-  <section id="titles" class="section-content">
-
-            <h2>Page Titles</h2>
-            <p>Page titles are important because they help a user navigate their browser. Most users have multiple tabs open at once. It's easier to jump between pages if each page title is unique. It's also helpful to have the unique portion first, usually the name of the page. </p>
+<section id="titles" class="container section-content">
+  <div class="col-md-9">
+  
+  <h2>Page Titles</h2>
+  <p>Page titles are important because they help a user navigate their browser. Most users have multiple tabs open at once. It's easier to jump between pages if each page title is unique. It's also helpful to have the unique portion first, usually the name of the page. </p>
 
   <h3>Testing</h3>
 
@@ -846,15 +993,19 @@
   <blockquote>
   <p>The title for this page is 'Page Titles - 18F Accessibility'. The first half is the name of this page and the second is the name of the site.  </p>
   </blockquote>
-  </section>
-</div>
+
+  </div>  
+</section>
+
 <!-- Page Titles end -->
 
 <!-- Headings -->
-<div class="container col-md-offset-1 col-md-8">
-  <section id="headings" class="section-content">
-            <h2>Headings</h2>
-            <p>When laying out a page, headings provide a semantic way to lay out sections of content. A heading element briefly describes the topic of the section it introduces. Heading elements are used by users of AT to navigate a page quickly and to understand the structure of a page. Also see <a href="../landmarks/">Landmarks</a>.</p>
+<section id="headings" class="container section-content">
+  <div class="col-md-9">
+  
+  
+  <h2>Headings</h2>
+  <p>When laying out a page, headings provide a semantic way to lay out sections of content. A heading element briefly describes the topic of the section it introduces. Heading elements are used by users of AT to navigate a page quickly and to understand the structure of a page. Also see <a href="../landmarks/">Landmarks</a>.</p>
 
   <p>When using heading elements, reserve the <code>&lt;h1&gt;</code> element for the page title. On the home page, this is usually the title of the site and on other pages, this may be the page title. Use the <code>&lt;h1&gt;</code> element once per page—some assistive technology may be unable to read multiple <code>&lt;h1&gt;</code>s on a single page correctly. Other heading levels may be used more than once following document outline order and you may reset headings up to <code>&lt;h2&gt;</code> with the <code>&lt;section&gt;</code> element.</p>
 
@@ -923,8 +1074,9 @@
   <blockquote>
   <p>This section has several issues. The first sub category has a lower value than the main category. The second sub category has skipped a heading level which while is better, this can cause confusion as its not clear if this category is the sub category of <code>Category</code> or <code>Sub category 1</code></p>
   </blockquote>
-  </section>
-</div>   
+  
+  </div>   
+</section>
 <!-- Headings end -->
 
 <!-- FOOTER -->
