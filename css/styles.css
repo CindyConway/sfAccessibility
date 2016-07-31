@@ -321,6 +321,7 @@ a:hover {
   .sidebar.affix .sidenav li{
     list-style: none;
   }
+}  
 @media (min-width: 1200px) {
   /* Widen the fixed sidebar again */
   .sidebar.affix-bottom,
@@ -420,8 +421,8 @@ a:hover {
 .ability-content{
 
 }
-.persona-img img{
-
+.persona-img{
+  padding: 5px 5px;
 }
 .persona-content{
 
@@ -511,7 +512,7 @@ footer p {
   h6 { font-size: .8em; color: #7F8289; }
   p { font-size: 1.1em; line-height: 1.4em; }
   .footer-links a { font-size: 1em; }
-  .ability-icon img{ width: 70px; }
+  /*.ability-icon{ width: 100px; }*/
 }
 
 /* -------------------- Mobile Landscape -------------------- */
