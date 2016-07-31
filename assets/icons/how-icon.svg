@@ -9,7 +9,7 @@
             <rect x="9" y="39" width="172" height="172" fill="white"></rect>
             <use xlink:href="#path-1" fill="black"></use>
         </mask>
-        <ellipse id="path-3" cx="85" cy="85" rx="85" ry="85"></ellipse>
+        <path d="M124.613342,97.3066708 C121.623445,105.987275 120,115.30405 120,125 C120,134.69595 121.623445,144.012725 124.613342,152.693329 L180,125 L124.613342,97.3066708 Z" id="path-3"></path>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="How">
@@ -17,13 +17,11 @@
                 <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
                 <use stroke="#0082ED" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
             </g>
-            <g id="Group" transform="translate(120.000000, 40.000000)">
-                <mask id="mask-4" fill="white">
-                    <use xlink:href="#path-3"></use>
-                </mask>
-                <use id="Mask" fill="#0A3764" xlink:href="#path-3"></use>
-                <polygon id="Triangle" fill="#0082ED" mask="url(#mask-4)" points="-110 170 -110 0 60 85"></polygon>
-            </g>
+            <ellipse id="Oval" fill="#0A3764" cx="205" cy="125" rx="85" ry="85"></ellipse>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <use id="Combined-Shape" fill="#0082ED" xlink:href="#path-3"></use>
         </g>
     </g>
 </svg>
