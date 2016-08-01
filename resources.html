@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>San Francisco - Accessibility Guide - Why</title>
-    <meta name="description" content="Why web accessibility matters">
+    <title>San Francisco - Accessibility Guide - Resources</title>
+    <meta name="description" content="Web accessibility resources and trainings">
     <meta name="keywords" content="san francisco, city, sf, sfgov, web, accessibility, disabilities, inclusive, design, development, guide, educational, training, checklist, guidelines, user, experience, human-centered" />
     <meta property="og:image" content="http://digitalservices.sfgov.org/assets/SFDS_Logo.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -78,32 +78,9 @@
   <aside class="sidebar hidden-print hidden-xs hidden-sm affix" style=""> 
     <ul class="sidenav nav"> 
       <li class="active"><a href="#why">Overview</a> </li> 
-      <li class=""> <a href="#users">Users</a> 
-        <ul class="item-nav nav">  
-          <li class=""><a href="#users-personas">User Personas</a></li> 
-          <li class=""><a href="#users-testing">User Testing</a></li>
-        </ul> 
-      </li> 
-      <li class=""> <a href="#devices">Devices</a> 
-        <ul class="item-nav nav"> 
-          <li class=""><a href="#devices-examples">Examples</a></li> 
-          <li class=""><a href="#devices-usage">Usage</a></li> 
-          <li class=""><a href="#devices-methods">Methods</a></li>  
-        </ul> 
-      </li>  
-      <li class=""> <a href="#law">Law</a> 
-        <ul class="item-nav nav"> 
-          <li class=""><a href="#law-ada">ADA</a></li> 
-          <li class=""><a href="#law-508">Section 508</a></li>  
-        </ul> 
-      </li>  
-      <li class=""> <a href="#standards">Standards</a> 
-        <ul class="item-nav nav"> 
-          <li class=""><a href="#standards-wcag">WCAG 2.0</a></li> 
-          <li class=""><a href="#standards-wai">WAI</a></li> 
-          <li class=""><a href="#standards-wai-aria">WAI-ARIA</a></li>  
-        </ul> 
-      </li>  
+      <li class=""> <a href="#define">Definitions</a> </li> 
+      <li class=""> <a href="#contracts">Contract Language</a> </li>  
+      <li class=""> <a href="#training">Tranings</a> </li>    
     </ul> 
     <a class="back-to-top" href="#why"> Back to top </a> 
   </aside> 
@@ -114,8 +91,8 @@
       <div class="col-md-9">
           <img class="category-icon col-xs-6 col-sm-4 col-md-3" src="assets/icons/why2-icon.svg"> 
           <div class="category-title col-xs-10 col-sm-8 col-md-9">
-            <h1>Why it matters</h1>
-            <h4>Designing and building for accessibility ensures you the ability to reach all your users.</h4>
+            <h1>Resources</h1>
+            <h4>Tools and teachings for creating a better experience.</h4>
           </div> 
           <div class="category-overview col-xs-12">
             <p>As a city we are required by law to meet the accessibility guidelines set forth by the Americans with Disabilities Act and Section 508 of the Rehabilitation Act.  But for too long our approch has been one of compliance, designed around certain best practices; but, best practices perpetuate a conflicting “one size fits all” model that’s rarely rooted in any actual insight (much less insight that is relevant to your product) propelling products toward a state of mediocrity.</p>
@@ -125,94 +102,50 @@
       </div>
     </header>
 <!-- Header End -->
-<!-- Users -->
-    <section id="users" class="container section-content">
+<!-- Definitions -->
+    <section id="define" class="container section-content">
       <div class="col-md-9">
-        <h2>Users</h2>
-          <p>To first provide us with a shared vocabulary as we move through this guide we have set up four categories below that allow us to showcase how your users interact with and experience your website. Then we can begin to develop an understanding of how to best imlement our designs and deliver content.</p>
-          <div class="row">
-            <img class="col-xs-3 col-sm-2 ability-icon" src="assets/icons/vision.svg" alt="pictogram of an eye with a line crossing through it">
-            <div class="col-xs-12 col-sm-10 ability-content">
-              <h3><strong>Visual</strong> - Blind, Low Vision, Color Blind</h3>
-              <p>Convert visual info to audio <br/>Small type, strange type-face, dispersed layout <br/>Color does not convey meaning</p>
-            </div>
-          </div>
-          <div class="row">
-            <img class="col-xs-3 col-sm-2 ability-icon" src="assets/icons/hearing.svg" alt="pictogram of an ear with a line crossing through it">
-            <div class="col-xs-12 col-sm-10 ability-content">
-              <h3><strong>Auditory</strong> - Deaf, Hard of hearing</h3>
-              <p>Closed Captioning, downloadable transcripts</p>
-            </div>
-          </div>
-          <div class="row">
-            <img class="col-xs-3 col-sm-2 ability-icon" src="assets/icons/cognitive.svg" alt="pictogram of human brain">
-            <div class="col-xs-12 col-sm-10 ability-content">
-              <h3><strong>Cognitive</strong> - Attention, Learning Disorders</h3>
-              <p>Convoluted presentation of information</p>
-            </div>
-          </div>
-          <div class="row">
-            <img class="col-xs-3 col-sm-2 ability-icon" src="assets/icons/mobility.svg" alt="pictogram of a person in a wheel chair">
-            <div class="col-xs-12 col-sm-10 ability-content">
-              <h3><strong>Physical</strong> - Mobility, Tremors, Paralysis</h3>
-              <p>Limits input devices (keyboard, mouse, touch screen)</p>
-            </div>
-          </div> 
-      </div> 
-    </section>
-<!-- Users End -->
-<!-- Personas -->
-    <section id="users-personas" class="container section-content">
-      <div class="col-md-9">
-        <h2>Users Personas</h2>
-          <p>Understanding the user is key to providing any relevant solution. User personas allow us to better imagine ourselves in certain scenarios and understand what limitations exist.</p>
-          <p>Empathy allows us to keep the user front of mind while building and testing frequently to constantly challenge our assumptions. Once we place ourselves in another's shoes we can start to think and develop solutions to alleviate those barriers. </p>
-        <div class="row">
-          <div class="persona-img-group col-xs-12">
-            <img class="col-xs-6 col-sm-4 persona-img" src="assets/personas/nick_1.jpg" alt="young man playing a guitar">
-            <img class="col-xs-6 col-sm-4 persona-img" src="assets/personas/nick_2.jpg" alt="young man editing music with his laptop set ontop of a keyboard piano">
-            <img class="col-xs-6 col-sm-4 persona-img" src="assets/personas/nick_3.jpg" alt="close up of young man's hands playing guitar">
-          </div>  
-          <div class="col-xs-12 persona-content">
-            <h3><strong>Nick, 26</strong></h3>
-            <p>Lives in Lower Haight, and works downtown as an accountant by day, but his passion is music. He’s been playing guitar since he was 13 and writes his own songs. He uses the internet to find new music and publish his own. Check him out on SoundCloud!</p>
-            <p>He was also born blind. Making it hard to navigate some music blogs. He gets frustrated when some websites autoplay music or video, as it is sometimes hard to find the controls using keyboard navigation.</p>
-          </div>
-        </div>  
+      <h2>Writing guide</h2>
+      <h3>The Law</h3>
+
+      <p>Section 508 is part of the 'Rehabilitation Act of 1973.' The law was amended in 1998 to add 508 which requires that government agencies provide equal access to infromation to disabled employees.</p>
+
+      <p>The correct way to refer to the law is: </p>
+
+      <ul>
+      <li>Section 508 of the Rehabilitation Act of 1973, as amended (29 U.S.C. § 794 (d))</li>
+      <li>Section 508 of the Rehabilitation Act</li>
+      <li>Section 508</li>
+      </ul>
+
+      <p>While related in ways, the Rehabilitation Act is not part of the Americans with Disabilities Act. </p>
+
+      <h3>Key Words</h3>
+
+      <ul>
+      <li><p><b>Conformance:</b> We conform with the standards of Section 508, not the law of section 508.</p></li>
+      <li><p><b>Compliance:</b> A government agency is in compliance with the law.</p></li>
+      </ul>
+
+      <h3>Talking Points</h3>
+
+      <ul>
+      <li>The goal of accessibility at 18f is to build sites that are usable by everyone, not to meet minimum standards</li>
+      <li>We focus on building accessibility into every step of a project, from design to each sprint review</li>
+      <li>Employing accessibility best practices improves the user experience of all users</li>
+      <li>18f guidelines and best practices are not intended to be a replacement or supplement for Section 508 Standards, but are tools to acheiving these standards in a modern web development consultancy </li>
+      </ul>
+
+      <h3>Examples</h3>
+
+      <p><a href="https://playbook.cio.gov/designstandards/">US Web Design Standards</a></p>
+
+      <p><code>Accessibility out of the box. These guidelines were built with a priority on accessibility at every step of the design process in conformance with Section 508 Standards. From colors to code, everything you need to meet high standards of accessibility are baked into these tools.</code></p>
       </div>
-    </section>      
-<!-- Personas End -->
-<!-- Devices -->
-    <section id="devices" class="container section-content">
-      <div class="col-md-9">
-        <h2>Devices</h2>
-          <p>Some users find it helpful to use specialized input or output devices. Including: screen readers, speech to text, </p>
-          <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-6">
-              <h4>Braille Display</h4>
-              <p>Lorem ipsum Enim pariatur in nulla quis in irure minim ut ullamco qui minim in commodo.</p>
-            </div>
-            <img class="device-img col-xs-12 col-sm-8 col-md-6" src="assets/devices/braille_display.jpg" alt="product photo of a refreshable braille display made by Humanware"/>
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-6 pull-right">
-              <h4>Switch Access</h4>
-              <p>Lorem ipsum Enim pariatur in nulla quis in irure minim ut ullamco qui minim in commodo.</p>
-            </div>
-            <img class="device-img col-xs-12 col-sm-8 col-md-6" src="assets/devices/switch_control.jpg" alt="product photo of a compact wired switch or button, made by AbleNet"/>
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-6">
-              <h4>Eye or Face Tracking</h4>
-              <p>A computer input device that takes the place of a mouse by tracking the users head movements from a small dot placed on the forehead to move the cursor. Used by people with little or no hand movement.</p>
-            </div>
-            <img class="device-img col-xs-12 col-sm-8 col-md-6" src="assets/devices/tracking_camera.jpg" alt="product photo of a facial tracking camera made by AbleNet"/>
-          </div>
-      </div> 
     </section>
-<!-- Devices End -->
+<!-- Definitions End -->
 <!-- Law -->
-    <section id="law" class="container section-content">
+    <section id="contracts" class="container section-content">
       <div class="col-md-9">
         <h2>Law</h2>
           <p><a href="https://www.ada.gov/index.html" target="_blank">Americans with Disabilities Act of 1990 (ADA)</a> is a civil rights law. It prohibits discrimination on the basis of disability, as long as the person is otherwise qualified</p>
@@ -223,7 +156,7 @@
     </section>
 <!-- Law End -->
 <!-- Standards -->
-    <section id="standards" class="container section-content">
+    <section id="training" class="container section-content">
       <div class="col-md-9">
         <h2>Standards</h2>
           <p><a href="http://www.w3.org" target="_blank">The World Wide Web Consortium (W3C)</a> is an international community that develops open standards to ensure the long-term growth of the Web.</p>
