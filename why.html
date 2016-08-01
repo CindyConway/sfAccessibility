@@ -20,7 +20,7 @@
     <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".sidebar">
 
   <nav class="navbar navbar-fixed-top">
     <div class="container">
@@ -77,29 +77,29 @@
 <!-- Side Menu -->
   <div class="col-md-3 pull-right" role="complementary"> 
   <aside class="sidebar hidden-print hidden-xs hidden-sm affix" style=""> 
-    <ul class="sidenav"> 
-      <li class=""><a href="#why">Overview</a> </li> 
+    <ul class="sidenav nav"> 
+      <li class="active"><a href="#why">Overview</a> </li> 
       <li class=""> <a href="#users">Users</a> 
-        <ul class="item-nav">  
+        <ul class="item-nav nav">  
           <li class=""><a href="#users-personas">User Personas</a></li> 
           <li class=""><a href="#users-testing">User Testing</a></li>
         </ul> 
       </li> 
       <li class=""> <a href="#devices">Devices</a> 
-        <ul class="item-nav"> 
+        <ul class="item-nav nav"> 
           <li class=""><a href="#devices-examples">Examples</a></li> 
           <li class=""><a href="#devices-usage">Usage</a></li> 
           <li class=""><a href="#devices-methods">Methods</a></li>  
         </ul> 
       </li>  
       <li class=""> <a href="#law">Law</a> 
-        <ul class="item-nav"> 
+        <ul class="item-nav nav"> 
           <li class=""><a href="#law-ada">ADA</a></li> 
           <li class=""><a href="#law-508">Section 508</a></li>  
         </ul> 
       </li>  
       <li class=""> <a href="#standards">Standards</a> 
-        <ul class="item-nav"> 
+        <ul class="item-nav nav"> 
           <li class=""><a href="#standards-wcag">WCAG 2.0</a></li> 
           <li class=""><a href="#standards-wai">WAI</a></li> 
           <li class=""><a href="#standards-wai-aria">WAI-ARIA</a></li>  
@@ -127,8 +127,8 @@
     </header>
 <!-- Header End -->
 <!-- Users -->
-    <section class="container section-content">
-      <div id="users" class="col-md-9">
+    <section id="users" class="container section-content">
+      <div class="col-md-9">
         <h2>Users</h2>
           <p>To first provide us with a shared vocabulary as we move through this guide we have set up four categories below that allow us to showcase how your users interact with and experience your website. Then we can begin to develop an understanding of how to best imlement our designs and deliver content.</p>
           <div class="row">
@@ -163,8 +163,8 @@
     </section>
 <!-- Users End -->
 <!-- Personas -->
-    <section class="container section-content">
-      <div id="users-personas" class="col-md-9">
+    <section id="users-personas" class="container section-content">
+      <div class="col-md-9">
         <h2>Users Personas</h2>
           <p>Understanding the user is key to providing any relevant solution. User personas allow us to better imagine ourselves in certain scenarios and understand what limitations exist.</p>
           <p>Empathy allows us to keep the user front of mind while building and testing frequently to constantly challenge our assumptions. Once we place ourselves in another's shoes we can start to think and develop solutions to alleviate those barriers. </p>
@@ -184,16 +184,16 @@
     </section>      
 <!-- Personas End -->
 <!-- Devices -->
-    <section class="container section-content">
-      <div id="devices" class="col-md-9">
+    <section id="devices" class="container section-content">
+      <div class="col-md-9">
         <h2>Devices</h2>
-          <p>Lorem ipsum Enim pariatur in nulla quis in irure minim ut ullamco qui minim in commodo ullamco mollit laboris in et ad non eu aliqua commodo non fugiat incididunt deserunt commodo est reprehenderit.</p>
+          <p>Some users find it helpful to use specialized input or output devices. Including: screen readers, speech to text, </p>
           <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-6">
               <h4>Braille Display</h4>
               <p>Lorem ipsum Enim pariatur in nulla quis in irure minim ut ullamco qui minim in commodo.</p>
             </div>
-            <img class="device-img col-xs-12 col-sm-8 col-md-6" src="assets/devices/braille_display.jpg" alt="product photo of a refreshable braille display made by Humanware">
+            <img class="device-img col-xs-12 col-sm-8 col-md-6" src="assets/devices/braille_display.jpg" alt="product photo of a refreshable braille display made by Humanware"/>
           </div>
           <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-6 pull-right">
@@ -207,14 +207,14 @@
               <h4>Eye or Face Tracking</h4>
               <p>A computer input device that takes the place of a mouse by tracking the users head movements from a small dot placed on the forehead to move the cursor. Used by people with little or no hand movement.</p>
             </div>
-            <img class="device-img col-xs-12 col-sm-8 col-md-6" src="assets/devices/tracking_camera.jpg" alt="product photo of a facial tracking camera made by AbleNet">
+            <img class="device-img col-xs-12 col-sm-8 col-md-6" src="assets/devices/tracking_camera.jpg" alt="product photo of a facial tracking camera made by AbleNet"/>
           </div>
       </div> 
     </section>
 <!-- Devices End -->
 <!-- Law -->
-    <section class="container section-content">
-      <div id="law" class="col-md-9">
+    <section id="law" class="container section-content">
+      <div class="col-md-9">
         <h2>Law</h2>
           <p><a href="https://www.ada.gov/index.html" target="_blank">Americans with Disabilities Act of 1990 (ADA)</a> is a civil rights law. It prohibits discrimination on the basis of disability, as long as the person is otherwise qualified</p>
           <p><a href="https://www.ada.gov/2010ADAstandards_index.htm" target="_blank">Title II and III of the ADA</a> requires that all programs offered through the state and local government such as the City and County of San Francisco must be accessible and usable to people with disabilities.</p>
@@ -224,14 +224,16 @@
     </section>
 <!-- Law End -->
 <!-- Standards -->
-    <section class="container section-content">
-      <div id="standards" class="col-md-9">
+    <section id="standards" class="container section-content">
+      <div class="col-md-9">
         <h2>Standards</h2>
           <p><a href="http://www.w3.org" target="_blank">The World Wide Web Consortium (W3C)</a> is an international community that develops open standards to ensure the long-term growth of the Web.</p>
           <p><a href="http://www.w3.org/WAI/" target="_blank">Web Accessibility Initiative (WAI)</a> is an effort to improve the accessibility of the web for people with disabilities.</p>
           <p><a href="http://www.w3.org/WAI/intro/wcag.php" target="_blank">Web Content Accessibility Guidelines (WCAG) 2.0</a> is a stable, referenceable technical standard with 3 levels of compliance</p>
           <p><a href="http://www.w3.org/WAI/intro/aria.php" target="_blank">Accessible Rich Internet Applications (WAI-ARIA) 1.0</a> is a technical specification that provides a framework used to improve the interoperability of dynamic content generated by scripts</p>
+          <br/><br/><br/><br/><br/>
       </div> 
+
     </section>
 <!-- Standards End -->
 <!-- FOOTER -->
