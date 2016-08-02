@@ -11,8 +11,17 @@
   margin-right: auto;
   text-align: center;
 }
-.hide {
-  display: none;
+.hide-visually {
+  position: absolute;
+  left: -500px;
+}
+.hide-visually.focusable:active, .hide-visually.focusable:focus {
+  left: 0;
+  z-index: 1000;
+}
+a.skip-to {
+  color: #00294C;
+  padding: 5px 5px;
 }
 
 /* Global Styles */
